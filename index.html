@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <title>Frontend Mentor | E-commerce product page</title> 
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  
+</head>
+<body class="antialiased bg-Lightgrayishblue font-font overflow-x-hidden bodyer ">
+  
+  <nav role="navigation" aria-label="global-navigation" class="flex justify-between items-center z-0  md:border-b border-Grayishblue "  id="nav" >
+  
+    <div class="flex gap-4  md:left-9 mt-3 lg:ml-28 md:ml-14 h-4">
+      <img src="./images/icon-menu.svg" alt="menu-svg"  class="ml-5 cursor-pointer md:hidden" id="menu"   >
+      <img src="./images/logo.svg" alt="logo-svg" class=" h-4">
+    </div>
+    <div class="md:static md:min-h-fit md:w-auto  md:bg-Lightgrayishblue  bg-Whiter w-52 left-[-100%] top-[0%] btn h-full flex fixed " id="navbar">
+       <div class=" absolute left-2 top-6 flex-col items-center transition ease-in duration-300  ">
+        <img src="./images/icon-close.svg" class="md:hidden flex justify-start ml-2   " id="close">
+     
+      </div>
+    <div class="transition-all ease-in duration-300 ">
+  
+      <ul class="flex flex-col md:flex-row md:items-center md:gap-4 gap-3 mt-24 md:mt-5 ml-4 relative 3xl:right-16 2xl:right-32 xl:right-32 4xl:right-48
+      5xl:right-36 6xl:right-44 text-black font-thin md:text-Darkgrayishblue md:font-light 7xl:right-56  transition-all ease-in duration-300 ">
+      
+        <li><a href="#">Collections</a></li>
+      
+    
+        <li><a href="#">Men</a></li>
+      
+      
+        <li><a href="#" class="woman">Women</a></li>
+      
+      
+        <li><a href="#">About</a></li>
+      
+        <li><a href="#">Contact</a></li>
+      
+      </ul>
+    </div>
+  
+    
+    </div>
+    <div class="flex gap-6 relative right-4 md:right-12 mt-6 ml-60 1xl:right-14 3xl:right-24 2xl:right-36">
+   
+      <div>
+        <button class="card-btn" >
+          <span class="indicator bg-Oranger ">
+          </span>
+          <img src="./images/icon-cart.svg" class="md:h-8 h-6 14xl:h-8 md:h-9relative ">
+          </button>
+      
+          <div class="relative grid   "  >
+             
+            <div class="absolute bg-Whiter rounded-lg md:rounded-2xl  md:mt-2 height md:bg-Whiter shadow-2xl shadow-black card-wrp hidden" id="hidden">
+              <p class="mt-5 ml-4 text-black font-thin text-2xl cart">Cart</p>
+              <div class= "border-Grayishblue border-b pb-6"></div>
+              <div class=" empty flex justify-center mt-20 md:mt-16  " id="card-content">
+                <p class="flex justify-center items-center font-thin text-Darkgrayishblue text-xl">Your cart is empty.</p>
+              </div>
+              </div>.
+          
+          </div>
+      </div>
+    <div >
+      <img src="./images/image-avatar.png" alt="avatar-png" class=" 11xl:h-8  md:mt-0  md:w-full 15xl:w-full ">
+    </div>
+    </div>
+
+  </nav>
+  <div class="container flex w-full h-full   flex-col md:flex-row">
+    
+    <div class="w-screen h-1/4 md:mt-24 ">
+      <div class="slider">
+      <div class="w-full md:w-3/5 md:ml-20 3xl:w-2/4 2xl:w-2/5 4xl:ml-32 md:h-3/4"  id="screen" data-aos="zoom-in-down" > 
+        
+        <div class="slides "  >
+          <img src="./images/image-product-1.jpg" alt="product1-svg"  class=" md:rounded-xl ">
+        </div>
+        <div class="slides">
+          <img src="./images/image-product-2.jpg" alt="product2-svg" class=" md:rounded-xl">
+        </div>
+        <div class="slides">
+          <img src="./images/image-product-3.jpg" alt="product3-svg" class=" md:rounded-xl " >
+        </div>
+        <div class="slides">
+          <img src="./images/image-product-4.jpg" alt="product4-svg" class="md:rounded-xl image " class="image">
+        </div>
+      </div>
+      
+        <a class="prev hover:bg-Oranger" id="fer" id="imager"><img src="./images/icon-previous.svg" alt="previous-svg"></a>
+        <a class="next hover:bg-Oranger" ><img src="./images/icon-next.svg" alt="next-svg"></a>
+
+      </div>
+    
+      <div class="flex md:flex-row">
+        <div class="hidden  md:block  mt-12 ml-20 space-x-2 2xl:space-x-6  1xl:space-x-5 lg:ml-32 10xl:ml-36 6xl:ml-40 5xl:ml-40 16xl:ml-40">
+     <div class="column">     <img class="h-14 5xl:h-16  demo rounded-lg border-2 border-orange-600 md:h-10 4xl:h-32 1xl:h-16 3xl:h-12 6xl:h-20 9xl:h-24 16xl:h-16 15xl:h-12" onclick="currentSlide(1)" src="./images/image-product-1-thumbnail.jpg " alt="product1-thumbnail"></div>
+     <div class="column"><img class="h-14 5xl:h-16 rounded-lg imagers md:h-10 4xl:h-28 1xl:h-20 3xl:h-12 6xl:h-20 9xl:h-24 16xl:h-16 15xl:h-12" 20 onclick="currentSlide(2)" src="./images/image-product-2-thumbnail.jpg" alt="product2-thumbnail"></div>
+     <div class="column"><img class="h-14 5xl:h-16  rounded-lg imagers md:h-10 4xl:h-28 1xl:h-20 3xl:h-12 6xl:h-20 9xl:h-24 16xl:h-16 15xl:h-12"  onclick="currentSlide(3)"src="./images/image-product-3-thumbnail.jpg" alt="product3-thumbnail"></div>
+     <div class="column"><img class="h-14 5xl:h-16 rounded-lg imagers md:h-10 4xl:h-28 1xl:h-20 3xl:h-12 6xl:h-20 9xl:h-24 16xl:h-16 15xl:h-12"  onclick="currentSlide(4)" src="./images/image-product-4-thumbnail.jpg" alt="product4-thumbnail"></div>
+        </div>
+      </div>
+      
+    </div >
+    <div class="w-11/12 md:w-10/12 mr-8 3xl:w-full md:mt-28" id="sneaker" >
+      <h1 class="pt-5 text-Oranger font-thin tracking-widest pl-5 fer" data-aos="slide-up" >SNEAKER COMPANY</h1>
+      <h2 class="pt-3 pl-5  text-black font-thin text-3xl" data-aos="slide-up">Fall Limited Edition</h2>
+      <h3 class="pl-5 text-black font-thin text-3xl" data-aos="slide-up">Sneakers</h3>
+      <h4 class="ml-5 pt-4 w-full font-light text-Darkgrayishblue  overflow-x-hidden text-base leading-7 md:text-sm 2xl:text-xl 2xl:w-5/6 8xl:text-2xl 8xl:w-5/6 3xl:text-xl" data-aos="slide-up" id="size">These low-profile sneakers are your perfect  casual wear companion
+        Featuring a durable rubber outer sole.they'll withstand everything the weather can offer.
+      </h4>
+      <div class="flex justify-between mt-6 ml-5 items-center" data-aos="slide-up" >
+      <div class="flex gap-4 ">
+        <div class=" flex flex-col">
+          <h5 class="text-black font-thin text-2xl">$125.00</h5>
+          <h5 class="hidden md:block  text-Grayishblue  font-thin"><s>$250.00</s></h5>
+          
+        </div>
+        
+        
+        
+        <div class="mt-1 bg-Paleorange font-thin text-Oranger pr-2 pl-2 md:h-6 flex justify-center items-center">50%</div>
+      </div>
+      <div class="md:hidden text-Grayishblue  font-thin"><s>$250.00</s></div>
+    
+      </div>
+      <div class="flex gap-1 flex-col md:flex-row 1xl:mt-6 md:items-center" data-aos="slide-up">
+      <div class="flex  justify-around md:justify-start ml-5  md:mt-0 mt-7 md:ml-5 md:pl-4 w-full md:gap-11 bg-Whiter md:w-40 pt-2 pb-2 md:rounded-lg font-thin rounded-lg cursor-pointer">
+        <div class="text-Oranger text-2xl " id="minus" >-</div>
+        <div class="text-Black text-2xl amount">0</div>
+        <div class="text-Oranger text-2xl plus">+</div>
+      </div>
+      <div class="flex  shadow-lg  shadow-orange-400 justify-center items-center w-full bg-Oranger ml-5 pt-3 pb-3 md:w-52 gap-2 rounded-lg mt-3 md:mt-0 transition ease-in-out duration-300 hover:bg-orange-400 cursor-pointer">
+        <div class="text-Whiter"><img src="./images/icon-cart1.svg/icon-cart2.svg"></div>
+      <div class="font-thin text-Whiter  card-button">Add to Cart</div>
+      
+    
+      </div>
+      </div>
+    </div>
+  </div> 
+ <div >
+  <div class="attribution " id="fronted">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Olaniyi Victor</a>.
+  </div>
+  <div class="pt-2"></div>
+</body>
+ 
+
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {duration:1200,
+        easing: 'ease'
+      }
+    );
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
